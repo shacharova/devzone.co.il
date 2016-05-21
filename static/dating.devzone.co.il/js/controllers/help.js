@@ -1,0 +1,5 @@
+/* global App */
+
+$(function () {
+   //TODO:  
+});

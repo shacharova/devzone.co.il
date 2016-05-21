@@ -1,0 +1,193 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>static</Name>
+    <ProjectGuid>{a0323d55-c02d-4959-8b13-7624cc4cea04}</ProjectGuid>
+    <RootNamespace>
+    </RootNamespace>
+    <OutputType>Library</OutputType>
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="api.devzone.co.il\css\app_styles.css" />
+    <Compile Include="api.devzone.co.il\js\app_scripts.js" />
+    <Compile Include="common\css\bootstrap\min.css" />
+    <Compile Include="common\css\jquery\fileupload\core.css" />
+    <Compile Include="common\css\jquery\fileupload\noscript.css" />
+    <Compile Include="common\css\jquery\fileupload\style.css" />
+    <Compile Include="common\css\jquery\fileupload\ui-noscript.css" />
+    <Compile Include="common\css\jquery\fileupload\ui.css" />
+    <Compile Include="common\css\jquery\ui\all.min.css" />
+    <Compile Include="common\css\jquery\ui\core.min.css" />
+    <Compile Include="common\css\jquery\ui\structure.min.css" />
+    <Compile Include="common\css\jquery\ui\theme.min.css" />
+    <Compile Include="common\css\kendo\common.min.css" />
+    <Compile Include="common\css\kendo\default.min.css" />
+    <Compile Include="common\css\kendo\rtl.min.css" />
+    <Compile Include="common\css\materialize\min.css" />
+    <Compile Include="common\js\bootstrap\min.js" />
+    <Compile Include="common\js\jquery\fileupload\audio.js" />
+    <Compile Include="common\js\jquery\fileupload\core.js" />
+    <Compile Include="common\js\jquery\fileupload\iframe-transport.js" />
+    <Compile Include="common\js\jquery\fileupload\image.js" />
+    <Compile Include="common\js\jquery\fileupload\jquery-ui.js" />
+    <Compile Include="common\js\jquery\fileupload\process.js" />
+    <Compile Include="common\js\jquery\fileupload\ui.js" />
+    <Compile Include="common\js\jquery\fileupload\validate.js" />
+    <Compile Include="common\js\jquery\fileupload\video.js" />
+    <Compile Include="common\js\jquery\ui\localization\he.js" />
+    <Compile Include="common\js\jquery\ui\all.min.js" />
+    <Compile Include="common\js\jquery\validate\localization\messages_ar.min.js" />
+    <Compile Include="common\js\jquery\validate\localization\messages_bg.min.js" />
+    <Compile Include="common\js\jquery\validate\localization\messages_bn_BD.min.js" />
+    <Compile Include="common\js\jquery\validate\localization\messages_ca.min.js" />
+    <Compile Include="common\js\jquery\validate\localization\messages_cs.min.js" />
+    <Compile Include="common\js\jquery\validate\localization\messages_da.min.js" />
+    <Compile Include="common\js\jquery\validate\localization\messages_de.min.js" />
+    <Compile Include="common\js\jquery\validate\localization\messages_el.min.js" />
+    <Compile Include="common\js\jquery\validate\localization\messages_es.min.js" />
+    <Compile Include="common\js\jquery\validate\localization\messages_es_AR.min.js" />
+    <Compile Include="common\js\jquery\validate\localization\messages_es_PE.min.js" />
+    <Compile Include="common\js\jquery\validate\localization\messages_et.min.js" />
+    <Compile Include="common\js\jquery\validate\localization\messages_eu.min.js" />
+    <Compile Include="common\js\jquery\validate\localization\messages_fa.min.js" />
+    <Compile Include="common\js\jquery\validate\localization\messages_fi.min.js" />
+    <Compile Include="common\js\jquery\validate\localization\messages_fr.min.js" />
+    <Compile Include="common\js\jquery\validate\localization\messages_ge.min.js" />
+    <Compile Include="common\js\jquery\validate\localization\messages_gl.min.js" />
+    <Compile Include="common\js\jquery\validate\localization\messages_he.min.js" />
+    <Compile Include="common\js\jquery\validate\localization\messages_hr.min.js" />
+    <Compile Include="common\js\jquery\validate\localization\messages_hu.min.js" />
+    <Compile Include="common\js\jquery\validate\localization\messages_hy_AM.min.js" />
+    <Compile Include="common\js\jquery\validate\localization\messages_id.min.js" />
+    <Compile Include="common\js\jquery\validate\localization\messages_is.min.js" />
+    <Compile Include="common\js\jquery\validate\localization\messages_it.min.js" />
+    <Compile Include="common\js\jquery\validate\localization\messages_ja.min.js" />
+    <Compile Include="common\js\jquery\validate\localization\messages_ka.min.js" />
+    <Compile Include="common\js\jquery\validate\localization\messages_kk.min.js" />
+    <Compile Include="common\js\jquery\validate\localization\messages_ko.min.js" />
+    <Compile Include="common\js\jquery\validate\localization\messages_lt.min.js" />
+    <Compile Include="common\js\jquery\validate\localization\messages_lv.min.js" />
+    <Compile Include="common\js\jquery\validate\localization\messages_my.min.js" />
+    <Compile Include="common\js\jquery\validate\localization\messages_nl.min.js" />
+    <Compile Include="common\js\jquery\validate\localization\messages_no.min.js" />
+    <Compile Include="common\js\jquery\validate\localization\messages_pl.min.js" />
+    <Compile Include="common\js\jquery\validate\localization\messages_pt_BR.min.js" />
+    <Compile Include="common\js\jquery\validate\localization\messages_pt_PT.min.js" />
+    <Compile Include="common\js\jquery\validate\localization\messages_ro.min.js" />
+    <Compile Include="common\js\jquery\validate\localization\messages_ru.min.js" />
+    <Compile Include="common\js\jquery\validate\localization\messages_si.min.js" />
+    <Compile Include="common\js\jquery\validate\localization\messages_sk.min.js" />
+    <Compile Include="common\js\jquery\validate\localization\messages_sl.min.js" />
+    <Compile Include="common\js\jquery\validate\localization\messages_sr.min.js" />
+    <Compile Include="common\js\jquery\validate\localization\messages_sr_lat.min.js" />
+    <Compile Include="common\js\jquery\validate\localization\messages_sv.min.js" />
+    <Compile Include="common\js\jquery\validate\localization\messages_th.min.js" />
+    <Compile Include="common\js\jquery\validate\localization\messages_tj.min.js" />
+    <Compile Include="common\js\jquery\validate\localization\messages_tr.min.js" />
+    <Compile Include="common\js\jquery\validate\localization\messages_uk.min.js" />
+    <Compile Include="common\js\jquery\validate\localization\messages_vi.min.js" />
+    <Compile Include="common\js\jquery\validate\localization\messages_zh.min.js" />
+    <Compile Include="common\js\jquery\validate\localization\messages_zh_TW.min.js" />
+    <Compile Include="common\js\jquery\validate\localization\methods_de.min.js" />
+    <Compile Include="common\js\jquery\validate\localization\methods_es_CL.min.js" />
+    <Compile Include="common\js\jquery\validate\localization\methods_fi.min.js" />
+    <Compile Include="common\js\jquery\validate\localization\methods_nl.min.js" />
+    <Compile Include="common\js\jquery\validate\localization\methods_pt.min.js" />
+    <Compile Include="common\js\jquery\validate\min.js" />
+    <Compile Include="common\js\jquery\1.11.3.min.js" />
+    <Compile Include="common\js\kendo\cultures\he.min.js" />
+    <Compile Include="common\js\kendo\cultures\info.txt" />
+    <Compile Include="common\js\kendo\all.min.js" />
+    <Compile Include="common\js\kendo\core.min.js" />
+    <Compile Include="common\js\kendo\data.min.js" />
+    <Compile Include="common\js\kendo\grid.min.js" />
+    <Compile Include="common\js\kendo\validator.min.js" />
+    <Compile Include="common\js\kendo\web.min.intellisense.js" />
+    <Compile Include="common\js\kendo\web.min.js" />
+    <Compile Include="common\js\materialize\min.js" />
+    <Compile Include="dating.devzone.co.il\css\app\styles.css" />
+    <Compile Include="dating.devzone.co.il\images\general\defaults\profile-female-128x128.png" />
+    <Compile Include="dating.devzone.co.il\images\general\defaults\profile-female-96x96.png" />
+    <Compile Include="dating.devzone.co.il\images\general\defaults\profile-male-128x128.png" />
+    <Compile Include="dating.devzone.co.il\images\general\defaults\profile-male-96x96.png" />
+    <Compile Include="dating.devzone.co.il\images\general\eye-icon-72x72.png" />
+    <Compile Include="dating.devzone.co.il\images\general\flags.png" />
+    <Compile Include="dating.devzone.co.il\images\general\v-icon-128x128.png" />
+    <Compile Include="dating.devzone.co.il\images\jquery\ui-icons_444444_256x240.png" />
+    <Compile Include="dating.devzone.co.il\images\jquery\ui-icons_555555_256x240.png" />
+    <Compile Include="dating.devzone.co.il\images\jquery\ui-icons_777620_256x240.png" />
+    <Compile Include="dating.devzone.co.il\images\jquery\ui-icons_777777_256x240.png" />
+    <Compile Include="dating.devzone.co.il\images\jquery\ui-icons_cc0000_256x240.png" />
+    <Compile Include="dating.devzone.co.il\images\jquery\ui-icons_ffffff_256x240.png" />
+    <Compile Include="dating.devzone.co.il\images\kendo\textures\highlight.png" />
+    <Compile Include="dating.devzone.co.il\images\kendo\imagebrowser.png" />
+    <Compile Include="dating.devzone.co.il\images\kendo\indeterminate.gif" />
+    <Compile Include="dating.devzone.co.il\images\kendo\loading-image.gif" />
+    <Compile Include="dating.devzone.co.il\images\kendo\loading.gif" />
+    <Compile Include="dating.devzone.co.il\images\kendo\slider-h.gif" />
+    <Compile Include="dating.devzone.co.il\images\kendo\slider-v.gif" />
+    <Compile Include="dating.devzone.co.il\images\kendo\sprite.png" />
+    <Compile Include="dating.devzone.co.il\images\kendo\sprite_2x.png" />
+    <Compile Include="dating.devzone.co.il\images\kendo\sprite_kpi.png" />
+    <Compile Include="dating.devzone.co.il\images\kendo\sprite_kpi_2x.png" />
+    <Compile Include="dating.devzone.co.il\images\users\profiles\1.jpg" />
+    <Compile Include="dating.devzone.co.il\images\users\profiles\2.jpg" />
+    <Compile Include="dating.devzone.co.il\js\controllers\help.js" />
+    <Compile Include="dating.devzone.co.il\js\controllers\manage.js" />
+    <Compile Include="dating.devzone.co.il\js\controllers\users.js" />
+    <Compile Include="dating.devzone.co.il\js\app_scripts.js" />
+    <Compile Include=".gitignore" />
+    <Compile Include=".htaccess" />
+    <Compile Include="robots.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="api.devzone.co.il\css" />
+    <Folder Include="api.devzone.co.il\fonts" />
+    <Folder Include="api.devzone.co.il\images" />
+    <Folder Include="api.devzone.co.il\js" />
+    <Folder Include="api.devzone.co.il" />
+    <Folder Include="common\css\bootstrap" />
+    <Folder Include="common\css\jquery\fileupload" />
+    <Folder Include="common\css\jquery\ui" />
+    <Folder Include="common\css\jquery" />
+    <Folder Include="common\css\kendo" />
+    <Folder Include="common\css\materialize" />
+    <Folder Include="common\css" />
+    <Folder Include="common\fonts" />
+    <Folder Include="common\images" />
+    <Folder Include="common\js\bootstrap" />
+    <Folder Include="common\js\jquery\fileupload" />
+    <Folder Include="common\js\jquery\ui\localization" />
+    <Folder Include="common\js\jquery\ui" />
+    <Folder Include="common\js\jquery\validate\localization" />
+    <Folder Include="common\js\jquery\validate" />
+    <Folder Include="common\js\jquery" />
+    <Folder Include="common\js\kendo\cultures" />
+    <Folder Include="common\js\kendo" />
+    <Folder Include="common\js\materialize" />
+    <Folder Include="common\js" />
+    <Folder Include="common" />
+    <Folder Include="dating.devzone.co.il\css\app" />
+    <Folder Include="dating.devzone.co.il\css\themes" />
+    <Folder Include="dating.devzone.co.il\css" />
+    <Folder Include="dating.devzone.co.il\fonts" />
+    <Folder Include="dating.devzone.co.il\images\general\defaults" />
+    <Folder Include="dating.devzone.co.il\images\general" />
+    <Folder Include="dating.devzone.co.il\images\jquery" />
+    <Folder Include="dating.devzone.co.il\images\kendo\textures" />
+    <Folder Include="dating.devzone.co.il\images\kendo" />
+    <Folder Include="dating.devzone.co.il\images\users\profiles" />
+    <Folder Include="dating.devzone.co.il\images\users" />
+    <Folder Include="dating.devzone.co.il\images" />
+    <Folder Include="dating.devzone.co.il\js\controllers" />
+    <Folder Include="dating.devzone.co.il\js" />
+    <Folder Include="dating.devzone.co.il" />
+  </ItemGroup>
+</Project>
