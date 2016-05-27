@@ -221,7 +221,7 @@ $LANG = & load_class('Lang', 'core');
 require BASEPATH . 'core/Controller.php';
 
 /**
- * @return App_Controller
+ * @return APP_Controller
  */
 function &get_instance() {
     return CI_Controller::get_instance();
