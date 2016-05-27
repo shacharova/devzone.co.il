@@ -268,14 +268,9 @@
     <Compile Include="system\libraries\Zip.php" />
     <Compile Include="system\.htaccess" />
     <Compile Include="system\index.html" />
-    <Compile Include=".gitattributes" />
     <Compile Include=".gitignore" />
     <Compile Include=".htaccess" />
     <Compile Include="api.phpproj" />
-    <Compile Include="api.phpproj.user" />
-    <Compile Include="composer.json" />
-    <Compile Include="composer.lock" />
-    <Compile Include="contributing.md" />
     <Compile Include="index.php" />
     <Compile Include="license.txt" />
     <Compile Include="readme.rst" />
