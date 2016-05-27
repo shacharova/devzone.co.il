@@ -16,8 +16,6 @@
     <IncludeDebugInformation>false</IncludeDebugInformation>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="application\cache\.htaccess" />
-    <Compile Include="application\cache\index.html" />
     <Compile Include="application\config\autoload.php" />
     <Compile Include="application\config\config.php" />
     <Compile Include="application\config\constants.php" />
@@ -25,7 +23,6 @@
     <Compile Include="application\config\doctypes.php" />
     <Compile Include="application\config\foreign_chars.php" />
     <Compile Include="application\config\hooks.php" />
-    <Compile Include="application\config\index.html" />
     <Compile Include="application\config\memcached.php" />
     <Compile Include="application\config\migration.php" />
     <Compile Include="application\config\mimes.php" />
@@ -33,34 +30,26 @@
     <Compile Include="application\config\routes.php" />
     <Compile Include="application\config\smileys.php" />
     <Compile Include="application\config\user_agents.php" />
-    <Compile Include="application\controllers\index.html" />
-    <Compile Include="application\controllers\Welcome.php" />
-    <Compile Include="application\core\index.html" />
-    <Compile Include="application\helpers\index.html" />
-    <Compile Include="application\hooks\index.html" />
-    <Compile Include="application\language\english\index.html" />
-    <Compile Include="application\language\index.html" />
-    <Compile Include="application\libraries\index.html" />
-    <Compile Include="application\logs\index.html" />
-    <Compile Include="application\models\index.html" />
-    <Compile Include="application\third_party\index.html" />
+    <Compile Include="application\controllers\Manage.php" />
+    <Compile Include="application\controllers\Root.php" />
+    <Compile Include="application\controllers\User.php" />
+    <Compile Include="application\core\WEB_Controller.php" />
+    <Compile Include="application\models\WEB\Metadata.php" />
     <Compile Include="application\views\errors\cli\error_404.php" />
     <Compile Include="application\views\errors\cli\error_db.php" />
     <Compile Include="application\views\errors\cli\error_exception.php" />
     <Compile Include="application\views\errors\cli\error_general.php" />
     <Compile Include="application\views\errors\cli\error_php.php" />
-    <Compile Include="application\views\errors\cli\index.html" />
     <Compile Include="application\views\errors\html\error_404.php" />
     <Compile Include="application\views\errors\html\error_db.php" />
     <Compile Include="application\views\errors\html\error_exception.php" />
     <Compile Include="application\views\errors\html\error_general.php" />
     <Compile Include="application\views\errors\html\error_php.php" />
-    <Compile Include="application\views\errors\html\index.html" />
-    <Compile Include="application\views\errors\index.html" />
-    <Compile Include="application\views\index.html" />
-    <Compile Include="application\views\welcome_message.php" />
-    <Compile Include="application\.htaccess" />
-    <Compile Include="application\index.html" />
+    <Compile Include="application\views\root\index.php" />
+    <Compile Include="application\views\user\communications.php" />
+    <Compile Include="application\views\user\favorites.php" />
+    <Compile Include="application\views\user\matches.php" />
+    <Compile Include="application\views\user\notifications.php" />
     <Compile Include="Properties\PublishProfiles\Development.phppub.user" />
     <Compile Include="system\core\Benchmark.php" />
     <Compile Include="system\core\CodeIgniter.php" />
@@ -221,23 +210,27 @@
     <Compile Include="robots.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="application\cache" />
-    <Folder Include="application\config" />
-    <Folder Include="application\controllers" />
-    <Folder Include="application\core" />
-    <Folder Include="application\helpers" />
-    <Folder Include="application\hooks" />
-    <Folder Include="application\language\english" />
-    <Folder Include="application\language" />
-    <Folder Include="application\libraries" />
-    <Folder Include="application\logs" />
-    <Folder Include="application\models" />
-    <Folder Include="application\third_party" />
-    <Folder Include="application\views\errors\cli" />
-    <Folder Include="application\views\errors\html" />
-    <Folder Include="application\views\errors" />
-    <Folder Include="application\views" />
-    <Folder Include="application" />
+    <Folder Include="application\" />
+    <Folder Include="application\cache\" />
+    <Folder Include="application\config\" />
+    <Folder Include="application\controllers\" />
+    <Folder Include="application\core\" />
+    <Folder Include="application\helpers\" />
+    <Folder Include="application\hooks\" />
+    <Folder Include="application\language\" />
+    <Folder Include="application\language\english\" />
+    <Folder Include="application\libraries\" />
+    <Folder Include="application\logs\" />
+    <Folder Include="application\models\" />
+    <Folder Include="application\models\WEB\" />
+    <Folder Include="application\third_party\" />
+    <Folder Include="application\views\" />
+    <Folder Include="application\views\errors\" />
+    <Folder Include="application\views\errors\cli\" />
+    <Folder Include="application\views\errors\html\" />
+    <Folder Include="application\views\manage\" />
+    <Folder Include="application\views\user\" />
+    <Folder Include="application\views\root\" />
     <Folder Include="Properties\PublishProfiles" />
     <Folder Include="Properties" />
     <Folder Include="system\core" />
@@ -262,5 +255,26 @@
     <Folder Include="system\libraries\javascript" />
     <Folder Include="system\libraries" />
     <Folder Include="system" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="application\.htaccess" />
+    <Content Include="application\cache\.htaccess" />
+    <Content Include="application\cache\index.html" />
+    <Content Include="application\config\index.html" />
+    <Content Include="application\controllers\index.html" />
+    <Content Include="application\core\index.html" />
+    <Content Include="application\helpers\index.html" />
+    <Content Include="application\hooks\index.html" />
+    <Content Include="application\index.html" />
+    <Content Include="application\language\english\index.html" />
+    <Content Include="application\language\index.html" />
+    <Content Include="application\libraries\index.html" />
+    <Content Include="application\logs\index.html" />
+    <Content Include="application\models\index.html" />
+    <Content Include="application\third_party\index.html" />
+    <Content Include="application\views\errors\cli\index.html" />
+    <Content Include="application\views\errors\html\index.html" />
+    <Content Include="application\views\errors\index.html" />
+    <Content Include="application\views\index.html" />
   </ItemGroup>
 </Project>
