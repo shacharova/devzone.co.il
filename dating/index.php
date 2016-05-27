@@ -10,17 +10,20 @@
  * things like logging and error reporting.
  *
  * This can be set to anything, but default usage is:
+ *
  *     development
  *     testing
  *     production
  *
  * NOTE: If you change these, also change the error_reporting() code below
+ *
  */
 define('ENVIRONMENT', 'development');
 /*
  * ---------------------------------------------------------------
  * ERROR REPORTING
  * ---------------------------------------------------------------
+ *
  * Different environments will require different levels of error reporting.
  * By default development will show errors but testing and live will hide them.
  */
@@ -30,10 +33,12 @@ if (defined('ENVIRONMENT')) {
         case 'development':
             error_reporting(E_ALL);
             break;
+
         case 'testing':
         case 'production':
             error_reporting(0);
             break;
+
         default:
             exit('The application environment is not set correctly.');
     }
@@ -43,9 +48,11 @@ if (defined('ENVIRONMENT')) {
  * ---------------------------------------------------------------
  * SYSTEM FOLDER NAME
  * ---------------------------------------------------------------
+ *
  * This variable must contain the name of your "system" folder.
  * Include the path if the folder is not in the same  directory
  * as this file.
+ *
  */
 $system_path = 'system';
 
@@ -53,6 +60,7 @@ $system_path = 'system';
  * ---------------------------------------------------------------
  * APPLICATION FOLDER NAME
  * ---------------------------------------------------------------
+ *
  * If you want this front controller to use a different "application"
  * folder then the default one you can set its name here. The folder
  * can also be renamed or relocated anywhere on your server.  If
@@ -60,6 +68,7 @@ $system_path = 'system';
  * http://codeigniter.com/user_guide/general/managing_apps.html
  *
  * NO TRAILING SLASH!
+ *
  */
 $application_folder = 'application';
 
@@ -67,6 +76,7 @@ $application_folder = 'application';
  * --------------------------------------------------------------------
  * DEFAULT CONTROLLER
  * --------------------------------------------------------------------
+ *
  * Normally you will set your default controller in the routes.php file.
  * You can, however, force a custom routing by hard-coding a
  * specific controller class/function here.  For most applications, you
