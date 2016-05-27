@@ -1,3 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -237,27 +238,6 @@
     <Folder Include="application\views\errors" />
     <Folder Include="application\views" />
     <Folder Include="application" />
-    <Folder Include="application_old\controllers" />
-    <Folder Include="application_old\core" />
-    <Folder Include="application_old\errors" />
-    <Folder Include="application_old\helpers" />
-    <Folder Include="application_old\hooks" />
-    <Folder Include="application_old\language\english" />
-    <Folder Include="application_old\language\hebrew" />
-    <Folder Include="application_old\language" />
-    <Folder Include="application_old\logs" />
-    <Folder Include="application_old\models" />
-    <Folder Include="application_old\third_party" />
-    <Folder Include="application_old\views\emails" />
-    <Folder Include="application_old\views\errors" />
-    <Folder Include="application_old\views\layouts" />
-    <Folder Include="application_old\views\manage" />
-    <Folder Include="application_old\views\shared" />
-    <Folder Include="application_old\views\users\partials" />
-    <Folder Include="application_old\views\users" />
-    <Folder Include="application_old\views\welcome" />
-    <Folder Include="application_old\views" />
-    <Folder Include="application_old" />
     <Folder Include="Properties\PublishProfiles" />
     <Folder Include="Properties" />
     <Folder Include="system\core" />
