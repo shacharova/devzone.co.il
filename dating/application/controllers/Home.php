@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Root extends WEB_Controller {
+class Home extends WEB_Controller {
 
 	public function index()
 	{

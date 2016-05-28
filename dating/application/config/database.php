@@ -72,12 +72,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $active_group = ENVIRONMENT;
 $query_builder = TRUE;
+$isWWW = $_SERVER['REMOTE_ADDR'] !== '::1' && $_SERVER['REMOTE_ADDR'] !== '127:0:0:1' && $_SERVER['SERVER_NAME'] !== 'localhost';
 
 // see: https://ellislab.com/codeigniter/user-guide/database/configuration.html
 
 $db['development'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost', // datingdb.devzone.co.il
+	'hostname' => ($isWWW ? 'localhost' : 'datingdb.devzone.co.il'),
 	'username' => '',
 	'password' => '',
 	'database' => '',
@@ -97,9 +98,10 @@ $db['development'] = array(
 	'save_queries' => TRUE
 );
 
+// TODO: Create tasting database for tasting
 $db['testing'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
+	'hostname' => ($isWWW ? 'localhost' : 'datingdb.devzone.co.il'),
 	'username' => '',
 	'password' => '',
 	'database' => '',
@@ -119,9 +121,10 @@ $db['testing'] = array(
 	'save_queries' => TRUE
 );
 
+// TODO: Create new database for production on the final domain name server (not devzone.co.il)
 $db['production'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
+	'hostname' => ($isWWW ? 'localhost' : 'datingdb.devzone.co.il'),
 	'username' => '',
 	'password' => '',
 	'database' => '',
