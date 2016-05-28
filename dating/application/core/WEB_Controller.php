@@ -80,7 +80,7 @@ abstract class WEB_Controller extends CI_Controller
         }
     }
     private function init_meta_data() {
-        //$this->set_meta_data('charset', 'UTF-8');
+        $this->set_meta_data('charset', $this->config->item('charset'));
         //$this->set_meta_data('http-equiv', 'Content-Type', 'text/html; charset=UTF-8');
         $this->set_meta_data('name', 'viewport', 'width=device-width, initial-scale=1.0, maximum-scale=1.0001, user-scalable=yes');
     }

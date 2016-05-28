@@ -31,12 +31,9 @@
     <Compile Include="application\config\smileys.php" />
     <Compile Include="application\config\user_agents.php" />
     <Compile Include="application\controllers\Manage.php" />
-    <Compile Include="application\controllers\Home.php" />
+    <Compile Include="application\controllers\Root.php" />
     <Compile Include="application\controllers\User.php" />
     <Compile Include="application\core\WEB_Controller.php" />
-    <Compile Include="application\errors\error_404.php" />
-    <Compile Include="application\errors\error_general.php" />
-    <Compile Include="application\errors\error_php.php" />
     <Compile Include="application\models\WEB\Metadata.php" />
     <Compile Include="application\models\WEB\Viewdata.php" />
     <Compile Include="application\views\errors\cli\error_404.php" />
@@ -249,7 +246,6 @@
     <Folder Include="application\logs\" />
     <Folder Include="application\models\" />
     <Folder Include="application\models\WEB\" />
-    <Folder Include="application\errors\" />
     <Folder Include="application\third_party\" />
     <Folder Include="application\views\" />
     <Folder Include="application\views\errors\" />
