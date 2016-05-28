@@ -110,7 +110,10 @@ class CI_Output {
         }
 
 
-        $this->mime_types = $mimes;
+        if (isset($mimes))
+        {
+            $this->mime_types = $mimes;
+        }
 
         log_message('debug', "Output Class Initialized");
     }

@@ -5,8 +5,9 @@ class Root extends WEB_Controller {
 
 	public function index()
 	{
-        // TODO: root/index action
-		
+        // TODO: complate root/index action
+		$this->set_view('root/index');
+        $this->render('WEB/layout');
 	}
 
     public function about_us() {

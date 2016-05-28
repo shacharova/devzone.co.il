@@ -10,15 +10,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * @author Shachar
  */
 class Metadata extends CI_Model {
-    public $attribute_name;
-    public $attribute_value;
-    public $content_value;
+    public $name;
+    public $value;
+    public $content;
 
 
-    public function __construct($attribute_name, $attribute_value, $content_value = NULL) {
+    public function __construct($name = NULL, $value = NULL, $content = NULL) {
         parent::__construct();
-        $this->attribute_name = $attribute_name;
-        $this->attribute_value = $attribute_value;
-        $this->content_value = $content_value;
+        $this->name = $name;
+        $this->value = $value;
+        $this->content = $content;
     }
 }

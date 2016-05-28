@@ -42,6 +42,11 @@ abstract class WEB_Controller extends CI_Controller
      */
     public $head_scripts = array();
     /**
+     * Array of Viewdata models for all of the views to be display.
+     * @var array
+     */
+    public $views = array();
+    /**
      * Contains all scripts(js) to be locate in the end of BODY tag.
      * @var array
      */
@@ -50,9 +55,34 @@ abstract class WEB_Controller extends CI_Controller
 
     public function __construct() {
         parent::__construct();
-        // TODO: set lang
-        // TODO: set dir
-        // TODO: set meta data common to all pages
+        $this->init_client_language();
+        $this->init_language_html_attributes();
+        $this->init_meta_data();
+    }
+
+    private function init_client_language() {
+        // TODO: Implement init_client_language function
+        // $this->config->set_item('language', $client_language);
+    }
+    private function init_language_html_attributes() {
+        // Note: When there will be more then few languages then saparete this code
+        //       to two switch-case blocks (the first for 'lang' and the second for 'dir')
+        switch($this->config->item('language')) {
+            case 'hebrew':
+                $this->html_lang = 'he';
+                $this->html_dir = 'rtl';
+                break;
+            default:
+            case 'english':
+                $this->html_lang = 'en';
+                $this->html_dir = 'ltr';
+                break;
+        }
+    }
+    private function init_meta_data() {
+        //$this->set_meta_data('charset', 'UTF-8');
+        //$this->set_meta_data('http-equiv', 'Content-Type', 'text/html; charset=UTF-8');
+        $this->set_meta_data('name', 'viewport', 'width=device-width, initial-scale=1.0, maximum-scale=1.0001, user-scalable=yes');
     }
 
     protected function set_html_lang($lang) {
@@ -65,9 +95,9 @@ abstract class WEB_Controller extends CI_Controller
             $this->html_dir = $dir;
         }
     }
-    protected function set_meta_data($attribute_name, $attribute_value, $content_value = null) {
-        if(is_string($attribute_name)) {
-            $this->meta_data_items[] = new Metadata($attribute_name, $attribute_value, $content_value);
+    protected function set_meta_data($name, $value, $content = null) {
+        if(is_string($name)) {
+            $this->meta_data_items[] = new Metadata($name, $value, $content);
         }
     }
     protected function set_page_title($page_title) {
@@ -86,12 +116,22 @@ abstract class WEB_Controller extends CI_Controller
         }
     }
     protected function set_view($file_name, $data = NULL) {
-        
+        if(is_string($file_name)) {
+            $this->views[] = new Viewdata($file_name, $data);
+        }
     }
     protected function set_body_script($src) {
         if(is_string($src)) {
             $this->body_scripts[] = $src;
         }
     }
-
+    protected function render($layout_path = NULL) {
+        if(is_string($layout_path)) {
+            $this->load->view($layout_path);
+        } else {
+            foreach($this->views as &$view) {
+                $this->load->view($view->file_name, $view->data);
+            }
+        }
+    }
 }

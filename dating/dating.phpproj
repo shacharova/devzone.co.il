@@ -35,6 +35,7 @@
     <Compile Include="application\controllers\User.php" />
     <Compile Include="application\core\WEB_Controller.php" />
     <Compile Include="application\models\WEB\Metadata.php" />
+    <Compile Include="application\models\WEB\Viewdata.php" />
     <Compile Include="application\views\errors\cli\error_404.php" />
     <Compile Include="application\views\errors\cli\error_db.php" />
     <Compile Include="application\views\errors\cli\error_exception.php" />
@@ -50,6 +51,7 @@
     <Compile Include="application\views\user\favorites.php" />
     <Compile Include="application\views\user\matches.php" />
     <Compile Include="application\views\user\notifications.php" />
+    <Compile Include="application\views\WEB\layout.php" />
     <Compile Include="Properties\PublishProfiles\Development.phppub.user" />
     <Compile Include="system\core\Benchmark.php" />
     <Compile Include="system\core\CodeIgniter.php" />
@@ -229,6 +231,7 @@
     <Folder Include="application\views\errors\cli\" />
     <Folder Include="application\views\errors\html\" />
     <Folder Include="application\views\manage\" />
+    <Folder Include="application\views\WEB\" />
     <Folder Include="application\views\user\" />
     <Folder Include="application\views\root\" />
     <Folder Include="Properties\PublishProfiles" />
