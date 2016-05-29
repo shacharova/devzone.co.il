@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 /**
  * @global WEB_Controller $this
@@ -11,9 +11,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     foreach($this->meta_data_items as &$item) {
         /** @var $item Metadata */
         if (empty($item->content)) {
-            printf('<meta %s="%s" >', $item->name, $item->value);
+            printf('<meta %s="%s" />', $item->name, $item->value);
         } else {
-            printf('<meta %s="%s" content="%s" >', $item->name, $item->value, $item->content);
+            printf('<meta %s="%s" content="%s" />', $item->name, $item->value, $item->content);
         }
     }
     ?>

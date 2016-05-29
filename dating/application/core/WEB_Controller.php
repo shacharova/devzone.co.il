@@ -56,32 +56,40 @@ abstract class WEB_Controller extends CI_Controller
     public function __construct() {
         parent::__construct();
         $this->init_client_language();
-        $this->init_language_html_attributes();
+        $this->html_lang = $this->get_html_lang();
+        $this->html_dir = $this->get_html_dir();
         $this->init_meta_data();
-    }
+
+        // TODO: Checks what the following 3 lines doing exactly
+        header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
+        header("Cache-Control: post-check=0, pre-check=0", false);
+        header("Pragma: no-cache");
+    }   
 
     private function init_client_language() {
         // TODO: Implement init_client_language function
         // $this->config->set_item('language', $client_language);
     }
-    private function init_language_html_attributes() {
-        // Note: When there will be more then few languages then saparete this code
-        //       to two switch-case blocks (the first for 'lang' and the second for 'dir')
+    private function get_html_lang() {
         switch($this->config->item('language')) {
             case 'hebrew':
-                $this->html_lang = 'he';
-                $this->html_dir = 'rtl';
-                break;
+                return 'iw';
             default:
             case 'english':
-                $this->html_lang = 'en';
-                $this->html_dir = 'ltr';
-                break;
+                return 'en';
+        }
+    }
+    private function get_html_dir() {
+        switch($this->config->item('language')) {
+            case 'hebrew':
+                return 'rtl';
+            default:
+            case 'english':
+                 return 'ltr';
         }
     }
     private function init_meta_data() {
         $this->set_meta_data('charset', $this->config->item('charset'));
-        //$this->set_meta_data('http-equiv', 'Content-Type', 'text/html; charset=UTF-8');
         $this->set_meta_data('name', 'viewport', 'width=device-width, initial-scale=1.0, maximum-scale=1.0001, user-scalable=yes');
     }
 

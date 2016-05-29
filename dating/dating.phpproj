@@ -46,6 +46,11 @@
     <Compile Include="application\views\errors\html\error_exception.php" />
     <Compile Include="application\views\errors\html\error_general.php" />
     <Compile Include="application\views\errors\html\error_php.php" />
+    <Compile Include="application\views\manage\account.php" />
+    <Compile Include="application\views\manage\dashboard.php" />
+    <Compile Include="application\views\manage\notifications.php" />
+    <Compile Include="application\views\manage\preferences.php" />
+    <Compile Include="application\views\manage\subscriptions.php" />
     <Compile Include="application\views\root\index.php" />
     <Compile Include="application\views\user\communications.php" />
     <Compile Include="application\views\user\favorites.php" />
