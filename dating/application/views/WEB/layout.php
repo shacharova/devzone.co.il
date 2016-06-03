@@ -17,9 +17,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         }
     }
     ?>
-    <title>
-        <?php echo $this->page_title; ?>
-    </title>
+    <title><?php echo $this->page_title; ?></title>
     <?php foreach($this->css_hrefs as &$href): ?>
     <link href="<?php echo $href; ?>" rel="stylesheet" type="text/css" />
     <?php endforeach; ?>
