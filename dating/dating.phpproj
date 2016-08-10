@@ -56,7 +56,7 @@
     <Compile Include="application\views\user\favorites.php" />
     <Compile Include="application\views\user\matches.php" />
     <Compile Include="application\views\user\notifications.php" />
-    <Compile Include="application\views\Web\layout.php" />
+    <Compile Include="application\views\web2\layout.php" />
     <Compile Include="Properties\PublishProfiles\Development.phppub.user" />
     <Compile Include=".gitignore" />
     <Compile Include=".htaccess" />
@@ -257,7 +257,7 @@
     <Folder Include="application\views\errors\cli\" />
     <Folder Include="application\views\errors\html\" />
     <Folder Include="application\views\manage\" />
-    <Folder Include="application\views\Web\" />
+    <Folder Include="application\views\web2\" />
     <Folder Include="application\views\user\" />
     <Folder Include="application\views\root\" />
     <Folder Include="Properties\PublishProfiles" />
