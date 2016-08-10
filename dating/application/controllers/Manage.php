@@ -1,14 +1,7 @@
 <?php
+defined('BASEPATH') OR exit('No direct script access allowed');
 
-/**
- * Manage short summary.
- *
- * Manage description.
- *
- * @version 1.0
- * @author Shachar
- */
-class Manage extends WEB_Controller
+class Manage extends Web_Controller
 {
     public function __construct() {
         parent::__construct();

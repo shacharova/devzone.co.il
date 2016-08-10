@@ -1,13 +1,13 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Root extends WEB_Controller {
+class Root extends Web_Controller {
 
 	public function index()
 	{
         // TODO: complate root/index action
 		$this->set_view('root/index');
-        $this->render('WEB/layout');
+        $this->render('Web/layout');
 	}
 
     public function about_us() {

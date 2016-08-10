@@ -1,14 +1,7 @@
 <?php
+defined('BASEPATH') OR exit('No direct script access allowed');
 
-/**
- * User short summary.
- *
- * User description.
- *
- * @version 1.0
- * @author Shachar
- */
-class User extends WEB_Controller
+class User extends Web_Controller
 {
     public function __construct() {
         parent::__construct();

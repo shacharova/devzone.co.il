@@ -33,7 +33,7 @@
     <Compile Include="application\controllers\Manage.php" />
     <Compile Include="application\controllers\Root.php" />
     <Compile Include="application\controllers\User.php" />
-    <Compile Include="application\core\WEB_Controller.php" />
+    <Compile Include="application\core\Web_Controller.php" />
     <Compile Include="application\models\WEB\Metadata.php" />
     <Compile Include="application\models\WEB\Viewdata.php" />
     <Compile Include="application\views\errors\cli\error_404.php" />
