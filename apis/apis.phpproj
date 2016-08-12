@@ -1,0 +1,165 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>apis</Name>
+    <ProjectGuid>{abdf77ab-6b30-49d1-8065-469d970eeb42}</ProjectGuid>
+    <RootNamespace>
+    </RootNamespace>
+    <OutputType>Library</OutputType>
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="application\cache\.htaccess" />
+    <Compile Include="application\cache\index.html" />
+    <Compile Include="application\config\autoload.php" />
+    <Compile Include="application\config\config.php" />
+    <Compile Include="application\config\constants.php" />
+    <Compile Include="application\config\database.php" />
+    <Compile Include="application\config\doctypes.php" />
+    <Compile Include="application\config\foreign_chars.php" />
+    <Compile Include="application\config\hooks.php" />
+    <Compile Include="application\config\index.html" />
+    <Compile Include="application\config\memcached.php" />
+    <Compile Include="application\config\migration.php" />
+    <Compile Include="application\config\mimes.php" />
+    <Compile Include="application\config\profiler.php" />
+    <Compile Include="application\config\routes.php" />
+    <Compile Include="application\config\smileys.php" />
+    <Compile Include="application\config\user_agents.php" />
+    <Compile Include="application\controllers\Get.php" />
+    <Compile Include="application\controllers\index.html" />
+    <Compile Include="application\controllers\Post.php" />
+    <Compile Include="application\controllers\Welcome.php" />
+    <Compile Include="application\core\App_Controller.php" />
+    <Compile Include="application\core\index.html" />
+    <Compile Include="application\helpers\index.html" />
+    <Compile Include="application\hooks\index.html" />
+    <Compile Include="application\language\english\index.html" />
+    <Compile Include="application\language\index.html" />
+    <Compile Include="application\libraries\index.html" />
+    <Compile Include="application\logs\index.html" />
+    <Compile Include="application\models\index.html" />
+    <Compile Include="application\third_party\index.html" />
+    <Compile Include="application\views\errors\cli\error_404.php" />
+    <Compile Include="application\views\errors\cli\error_db.php" />
+    <Compile Include="application\views\errors\cli\error_exception.php" />
+    <Compile Include="application\views\errors\cli\error_general.php" />
+    <Compile Include="application\views\errors\cli\error_php.php" />
+    <Compile Include="application\views\errors\cli\index.html" />
+    <Compile Include="application\views\errors\html\error_404.php" />
+    <Compile Include="application\views\errors\html\error_db.php" />
+    <Compile Include="application\views\errors\html\error_exception.php" />
+    <Compile Include="application\views\errors\html\error_general.php" />
+    <Compile Include="application\views\errors\html\error_php.php" />
+    <Compile Include="application\views\errors\html\index.html" />
+    <Compile Include="application\views\errors\index.html" />
+    <Compile Include="application\views\index.html" />
+    <Compile Include="application\views\welcome_message.php" />
+    <Compile Include="application\.htaccess" />
+    <Compile Include="application\index.html" />
+    <Compile Include="system\core\compat\hash.php" />
+    <Compile Include="system\core\compat\index.html" />
+    <Compile Include="system\core\compat\mbstring.php" />
+    <Compile Include="system\core\compat\password.php" />
+    <Compile Include="system\core\compat\standard.php" />
+    <Compile Include="system\core\Benchmark.php" />
+    <Compile Include="system\core\CodeIgniter.php" />
+    <Compile Include="system\core\Common.php" />
+    <Compile Include="system\core\Config.php" />
+    <Compile Include="system\core\Controller.php" />
+    <Compile Include="system\core\Exceptions.php" />
+    <Compile Include="system\core\Hooks.php" />
+    <Compile Include="system\core\index.html" />
+    <Compile Include="system\core\Input.php" />
+    <Compile Include="system\core\Lang.php" />
+    <Compile Include="system\core\Loader.php" />
+    <Compile Include="system\core\Log.php" />
+    <Compile Include="system\core\Model.php" />
+    <Compile Include="system\core\Output.php" />
+    <Compile Include="system\core\Router.php" />
+    <Compile Include="system\core\Security.php" />
+    <Compile Include="system\core\URI.php" />
+    <Compile Include="system\core\Utf8.php" />
+    <Compile Include="system\database\drivers\cubrid\cubrid_driver.php" />
+    <Compile Include="system\database\drivers\cubrid\cubrid_forge.php" />
+    <Compile Include="system\database\drivers\cubrid\cubrid_result.php" />
+    <Compile Include="system\database\drivers\cubrid\cubrid_utility.php" />
+    <Compile Include="system\database\drivers\cubrid\index.html" />
+    <Compile Include="system\database\drivers\ibase\ibase_driver.php" />
+    <Compile Include="system\database\drivers\ibase\ibase_forge.php" />
+    <Compile Include="system\database\drivers\ibase\ibase_result.php" />
+    <Compile Include="system\database\drivers\ibase\ibase_utility.php" />
+    <Compile Include="system\database\drivers\ibase\index.html" />
+    <Compile Include="system\database\drivers\mssql\index.html" />
+    <Compile Include="system\database\drivers\mssql\mssql_driver.php" />
+    <Compile Include="system\database\drivers\mssql\mssql_forge.php" />
+    <Compile Include="system\database\drivers\mssql\mssql_result.php" />
+    <Compile Include="system\database\drivers\mssql\mssql_utility.php" />
+    <Compile Include="system\database\drivers\mysql\index.html" />
+    <Compile Include="system\database\drivers\mysql\mysql_driver.php" />
+    <Compile Include="system\database\drivers\mysql\mysql_forge.php" />
+    <Compile Include="system\database\drivers\mysql\mysql_result.php" />
+    <Compile Include="system\database\drivers\mysql\mysql_utility.php" />
+    <Compile Include="system\database\drivers\mysqli\index.html" />
+    <Compile Include="system\database\drivers\mysqli\mysqli_driver.php" />
+    <Compile Include="system\database\drivers\mysqli\mysqli_forge.php" />
+    <Compile Include="system\database\drivers\mysqli\mysqli_result.php" />
+    <Compile Include="system\database\drivers\mysqli\mysqli_utility.php" />
+    <Compile Include="system\database\drivers\oci8\index.html" />
+    <Compile Include="system\database\drivers\index.html" />
+    <Compile Include="system\database\DB.php" />
+    <Compile Include="system\database\DB_cache.php" />
+    <Compile Include="system\database\DB_driver.php" />
+    <Compile Include="system\database\DB_forge.php" />
+    <Compile Include="system\database\DB_query_builder.php" />
+    <Compile Include="system\database\DB_result.php" />
+    <Compile Include="system\database\DB_utility.php" />
+    <Compile Include="system\database\index.html" />
+    <Compile Include="system\.htaccess" />
+    <Compile Include="system\index.html" />
+    <Compile Include=".gitignore" />
+    <Compile Include=".htaccess" />
+    <Compile Include="index.php" />
+    <Compile Include="license.txt" />
+    <Compile Include="readme.rst" />
+    <Compile Include="robots.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="application\cache" />
+    <Folder Include="application\config" />
+    <Folder Include="application\controllers" />
+    <Folder Include="application\core" />
+    <Folder Include="application\helpers" />
+    <Folder Include="application\hooks" />
+    <Folder Include="application\language\english" />
+    <Folder Include="application\language" />
+    <Folder Include="application\libraries" />
+    <Folder Include="application\logs" />
+    <Folder Include="application\models" />
+    <Folder Include="application\third_party" />
+    <Folder Include="application\views\errors\cli" />
+    <Folder Include="application\views\errors\html" />
+    <Folder Include="application\views\errors" />
+    <Folder Include="application\views" />
+    <Folder Include="application" />
+    <Folder Include="Properties\PublishProfiles" />
+    <Folder Include="Properties" />
+    <Folder Include="system\core\compat" />
+    <Folder Include="system\core" />
+    <Folder Include="system\database\drivers\cubrid" />
+    <Folder Include="system\database\drivers\ibase" />
+    <Folder Include="system\database\drivers\mssql" />
+    <Folder Include="system\database\drivers\mysql" />
+    <Folder Include="system\database\drivers\mysqli" />
+    <Folder Include="system\database\drivers\oci8" />
+    <Folder Include="system\database\drivers" />
+    <Folder Include="system\database" />
+    <Folder Include="system" />
+  </ItemGroup>
+</Project>

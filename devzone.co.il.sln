@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{A0786B88-2ADB-4C21-ABE8-AA2D79766269}") = "api", "api\api.phpproj", "{417D932B-0C1D-4B28-B270-09404E2ADA17}"
-EndProject
 Project("{A0786B88-2ADB-4C21-ABE8-AA2D79766269}") = "static", "static\static.phpproj", "{A0323D55-C02D-4959-8B13-7624CC4CEA04}"
 EndProject
 Project("{A0786B88-2ADB-4C21-ABE8-AA2D79766269}") = "dating", "dating\dating.phpproj", "{A8CCC044-2911-4EC0-8851-F5B861C8E46E}"
+EndProject
+Project("{A0786B88-2ADB-4C21-ABE8-AA2D79766269}") = "apis", "apis\apis.phpproj", "{ABDF77AB-6B30-49D1-8065-469D970EEB42}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,12 +15,12 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{417D932B-0C1D-4B28-B270-09404E2ADA17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{417D932B-0C1D-4B28-B270-09404E2ADA17}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0323D55-C02D-4959-8B13-7624CC4CEA04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A0323D55-C02D-4959-8B13-7624CC4CEA04}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8CCC044-2911-4EC0-8851-F5B861C8E46E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A8CCC044-2911-4EC0-8851-F5B861C8E46E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABDF77AB-6B30-49D1-8065-469D970EEB42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABDF77AB-6B30-49D1-8065-469D970EEB42}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
