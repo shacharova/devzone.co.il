@@ -54,9 +54,21 @@ abstract class Web_Controller extends CI_Controller
     public $scripts = array();
     #endregion
 
+    #region Protected Properties:
+    /**
+     * Default layout path which should be set by inheriting controller.
+     * @var string
+     */
+    protected $default_layout_path;
+    #endregion
 
-    public function __construct() {
+    /**
+     * Initialize the controller.
+     * @param string $default_layout_path (Optional) Default layout path.
+     */
+    public function __construct($default_layout_path = "layouts/default") {
         parent::__construct();
+        $this->default_layout_path = $default_layout_path;
 
         // Set default charset:
         $this->set_meta_data('charset', $this->config->item('charset'));
@@ -114,6 +126,8 @@ abstract class Web_Controller extends CI_Controller
     protected function render($layout_path = NULL) {
         if(is_string($layout_path)) {
             $this->load->view($layout_path);
+        } else if(is_string($this->default_layout_path)) {
+            $this->load->view($this->default_layout_path);
         } else {
             foreach($this->views as &$view) {
                 $this->load->view($view->file_name, $view->data);

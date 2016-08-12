@@ -1,2 +1,0 @@
-Download URL:
-http://cdnjs.com/libraries/kendo-ui-core
