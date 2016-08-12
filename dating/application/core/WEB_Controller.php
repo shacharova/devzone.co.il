@@ -1,11 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-abstract class TempName
-{
-
-}
-
 /**
  * Web_Controller short summary.
  *

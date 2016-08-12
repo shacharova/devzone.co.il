@@ -1,5 +1,0 @@
-/* global App */
-
-$(function () {
-   //TODO:  
-});
